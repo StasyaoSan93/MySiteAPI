@@ -6,9 +6,9 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Language-Python-darkgreen" />
   <img src="https://img.shields.io/badge/Framework-FastAPI-brightgreen" />
   <img src="https://img.shields.io/badge/Database-PostgreSQL-blue" />
-  <img src="https://img.shields.io/badge/Status-Production-ready-green" />
 </p>
 
 ---
