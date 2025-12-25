@@ -1,0 +1,36 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtualenv
+venv/
+.env/
+.venv/
+ENV/
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# Migrations
+alembic/versions/*.pyc
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage / tests
+.coverage
+htmlcov/
+.pytest_cache/
+
+# MyPy / Ruff / etc
+.mypy_cache/
+.ruff_cache/
