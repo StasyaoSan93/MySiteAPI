@@ -12,8 +12,6 @@
 </p>
 
 ---
----
----
 
 # 📑 Table of Contents
 - [Project Overview](#-project-overview)
@@ -22,8 +20,6 @@
 - [Tech Stack](#-tech-stack)
 - [License](#-license)
 
----
----
 ---
 
 # 📌 Project Overview
@@ -39,8 +35,6 @@ It allows you to:
 The API is suitable for **portfolio projects, small websites, and learning FastAPI with PostgreSQL**.
 
 ---
----
----
 
 # 🔍 Features
 
@@ -50,8 +44,6 @@ The API is suitable for **portfolio projects, small websites, and learning FastA
 - ⚡ FastAPI async handling for high performance  
 - 🧩 Easy integration with frontend or mobile apps  
 
----
----
 ---
 
 # 🧩 API Endpoints
@@ -66,8 +58,6 @@ The API is suitable for **portfolio projects, small websites, and learning FastA
 | `/sitedata/{id}` | DELETE | Delete a site data block |
 
 ---
----
----
 
 # 🧩 Tech Stack
 
@@ -77,8 +67,6 @@ The API is suitable for **portfolio projects, small websites, and learning FastA
 - **Async server:** Uvicorn  
 - **Environment management:** python-dotenv  
 
----
----
 ---
 
 # 📄 License
