@@ -13,7 +13,8 @@ models.Base.metadata.create_all(bind=engine)
 app = FastAPI(title="ISAProg Site API",  docs_url=None, redoc_url=None, openapi_url=None)
 
 origins = [
-    "https://isaprog.com",
+    #"https://isaprog.com",
+    "*",
 ]
 
 app.add_middleware(
