@@ -6,12 +6,24 @@ class SiteDataBase(BaseModel):
     headertext: str
     bodytext: str
     imageurl: str
-    siteurl: str  # Новое поле
+    siteurl: str
 
 class SiteDataCreate(SiteDataBase):
     pass
 
 class SiteDataResponse(SiteDataBase):
+    id: int
+
+    class Config:
+        from_attributes = True
+
+# INFO PAGE DATA BASE
+
+class InfoDataBase(BaseModel):
+    headertext: str
+    bodytext: str
+
+class InfoDataResponse(InfoDataBase):
     id: int
 
     class Config:

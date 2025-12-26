@@ -4,7 +4,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 from core import models
 from core.database import SessionLocal, engine
-from core.schemas import SiteDataCreate, SiteDataResponse, UserCreate, UserResponse, Token
+from core.schemas import SiteDataCreate, SiteDataResponse, UserCreate, UserResponse, Token, InfoDataResponse
 from core import auth
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -85,6 +85,10 @@ def get_item(item_id: int, db: Session = Depends(get_db)):
     if not item:
         raise HTTPException(status_code=404, detail="Item not found")
     return item
+
+@app.get("/infopagedata/", response_model=list[InfoDataResponse])
+def get_items(db: Session = Depends(get_db)):
+    return db.query(models.InfoPageData).all()
 
 @app.put("/sitedata/{item_id}", response_model=SiteDataResponse)
 def update_item(item_id: int, data: SiteDataCreate, db: Session = Depends(get_db), current_user: models.User = Depends(get_current_user)):

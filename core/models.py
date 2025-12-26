@@ -10,6 +10,13 @@ class SiteData(Base):
     imageurl = Column(Text)
     siteurl = Column(Text)
 
+class InfoPageData(Base):
+    __tablename__ = "infopagedata"
+
+    id = Column(Integer, primary_key=True, index=True)
+    headertext = Column(Text)
+    bodytext = Column(Text)
+
 class User(Base):
     __tablename__ = "users"
 

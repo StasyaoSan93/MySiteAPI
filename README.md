@@ -52,6 +52,7 @@ The API is suitable for **portfolio projects, small websites, and learning FastA
 |----------|--------|-------------|
 | `/token` | POST | Authenticate user and receive JWT token |
 | `/sitedata/` | GET | Retrieve all site data |
+| `/infopagedata/` | GET | Retrieve all data for info page |
 | `/sitedata/{id}` | GET | Retrieve site data by ID |
 | `/sitedata/` | POST | Create a new site data block |
 | `/sitedata/{id}` | PUT | Update an existing site data block |
