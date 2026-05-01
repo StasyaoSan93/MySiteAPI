@@ -54,8 +54,8 @@ The API is suitable for **portfolio projects, small websites, and learning Go wi
 | `/infopagedata/` | GET | Retrieve all data for info page |
 | `/sitedata/{id}` | GET | Retrieve site data by ID |
 | `/sitedata/` | POST | Create a new site data block |
-| `/sitedata/{id}` | PUT | Update an existing site data block |
-| `/sitedata/{id}` | DELETE | Delete a site data block |
+| ~~`/sitedata/{id}`~~ | ~~PUT~~ | ~~Update an existing site data block~~ |
+| ~~`/sitedata/{id}`~~ | ~~DELETE ~~ | ~~Delete a site data block~~ |
 
 ---
 

@@ -35,7 +35,13 @@ func main() {
 	r.GET("/infopagedata", getInfoPageData)
 
 	// Пример защищенного роута (в идеале добавить Middleware)
-	r.POST("/sitedata", createSiteData)
+	// Группируем роуты, требующие авторизации
+	protected := r.Group("/")
+	protected.Use(core.AuthMiddleware())
+	{
+		// Эти роуты теперь под защитой JWT
+		protected.POST("/sitedata", createSiteData)
+	}
 
 	// Получаем порт из .env или системных переменных
 	port := os.Getenv("PORT")
